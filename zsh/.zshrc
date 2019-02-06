@@ -128,3 +128,5 @@ build_prompt() {
 #Required for syntax highlighting
 source /usr/share/zsh/site-contrib/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
 
+# import shell aliases
+source $HOME/.aliases
