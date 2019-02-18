@@ -17,3 +17,5 @@ augroup ProjectDrawer
     autocmd!
     autocmd VimEnter * :Vexplore
 augroup END
+
+let g:netrw_list_hide = '.git,.svn,.jpg,.png,.bmp'
