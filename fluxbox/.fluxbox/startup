@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+#xmodmap "/home/thetaikun/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+
+## Set wallpaper
+feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
+
+## Start music
+mpc play &
+
+xterm -e cava &
+xterm -e ncmpcpp &
+
+#daemon needed for automounting plugged in devices
+thunar --daemon & 
+
+# Needed for transparancy (?)
+xcompmgr -c &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+# exec fluxbox
+# or if you want to keep a log:
+exec fluxbox -log "/home/thetaikun/.fluxbox/log"
