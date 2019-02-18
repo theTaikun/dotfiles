@@ -1,4 +1,5 @@
 #!/bin/bash
+# From https://gist.github.com/gdetrez/5845092
 
 echo -e "Powerline glyphs:\n\
 Code points Glyphe  Description                Old code point
