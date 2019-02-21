@@ -19,4 +19,4 @@ if !&diff " If not using vimdiff
         autocmd VimEnter * :Vexplore
     augroup END
 endif
-let g:netrw_list_hide = '.git,.svn,.jpg,.png,.bmp'
+let g:netrw_list_hide = '.git,.svn,.jpg,.png,.bmp,.swp'
