@@ -1,3 +1,6 @@
 [submodule "vim/.vim/pack/plugins/start/vimwiki"]
 	path = vim/.vim/pack/plugins/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "vim/.vim/pack/dist/start/csv"]
+	path = vim/.vim/pack/dist/start/csv
+	url = https://github.com/chrisbra/csv.vim
