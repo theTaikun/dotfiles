@@ -4,7 +4,8 @@
 Use [Stow](https://www.gnu.org/software/stow/) to install the dotfiles:
 ```shell
 stow -t ~/ vim
-stow -t ~/ stow
+stow -t ~/ zsh
+stow -t ~/ fluxbox 
 ```
 Each folder installs all (and only) the necessary files.
 

@@ -27,6 +27,9 @@ xterm -e ncmpcpp &
 #daemon needed for automounting plugged in devices
 thunar --daemon & 
 
+# Can't not have conky
+conky &
+
 # Needed for transparancy (?)
 xcompmgr -c &
 
