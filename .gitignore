@@ -5,3 +5,5 @@ vimwiki.vim
 fbrun_history
 menuconfig
 fluxbox/.fluxbox/log
+
+*.log
