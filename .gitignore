@@ -7,3 +7,4 @@ menuconfig
 fluxbox/.fluxbox/log
 
 *.log
+*.swp
