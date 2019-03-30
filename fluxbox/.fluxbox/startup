@@ -21,8 +21,8 @@ feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
 ## Start music
 mpc play &
 
-xterm -e cava &
-xterm -e ncmpcpp &
+urxvt -e cava &
+urxvt -e ncmpcpp &
 
 #daemon needed for automounting plugged in devices
 thunar --daemon & 

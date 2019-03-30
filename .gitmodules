@@ -4,3 +4,6 @@
 [submodule "vim/.vim/pack/dist/start/csv"]
 	path = vim/.vim/pack/dist/start/csv
 	url = https://github.com/chrisbra/csv.vim
+[submodule "vim/.vim/pack/plugins/start/vim-hexokinase"]
+	path = vim/.vim/pack/plugins/start/vim-hexokinase
+	url = https://github.com/RRethy/vim-hexokinase.git

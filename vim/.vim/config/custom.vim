@@ -16,7 +16,16 @@ if !&diff " If not using vimdiff
 " End group
     augroup ProjectDrawer
         autocmd!
-        autocmd VimEnter * :Vexplore
+        autocmd VimEnter * :Lexplore
     augroup END
 endif
 let g:netrw_list_hide = '.git,.svn,.jpg,.png,.bmp,.swp,.un~'
+
+"Settings to show tabs and trailing whitespace as visibile characters
+"https://www.reddit.com/r/vimporn/comments/9v6y3q/who_said_your_terminal_textbased_interface_cant/e9e8268?utm_source=share&utm_medium=web2x
+set list          " Display unprintable characters f12 - switches (displays symbol for spaces)
+set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping syntax
+
+tnoremap <ESC> <C-\><C-n> "When in terminal mode, remaps the <ESC> key so you can go back to normal mode
+
+set termguicolors               " Required for vim-hexokinase
