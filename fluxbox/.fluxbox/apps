@@ -12,3 +12,6 @@
 [app] (name=smplayer) (class=smplayer)
   [Alpha]	{255 140}
 [end]
+[app] (name=xv) (class=MPlayer)
+  [Alpha]	{255 140}
+[end]
