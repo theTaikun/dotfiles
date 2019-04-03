@@ -27,5 +27,6 @@ set list          " Display unprintable characters f12 - switches (displays symb
 set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping syntax
 
 tnoremap <ESC> <C-\><C-n> "When in terminal mode, remaps the <ESC> key so you can go back to normal mode
-
-set termguicolors               " Required for vim-hexokinase
+if $TERM!='putty-256color'          " If not using putty,
+    set termguicolors               " Required for vim-hexokinase
+endif
