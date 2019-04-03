@@ -1,11 +1,12 @@
 # theTaikun's dotfiles
 ## My personal dotfile configurations for my home Linux PCs
 
+## Stow
 Use [Stow](https://www.gnu.org/software/stow/) to install the dotfiles:
 ```shell
 stow -t ~/ vim
 stow -t ~/ zsh
-stow -t ~/ fluxbox 
+stow -t ~/ fluxbox
 ```
 Each folder installs all (and only) the necessary files.
 
@@ -16,6 +17,14 @@ Stow will prevent any collissions from occuring.
 
 To use Stow, first delete any existing files.
 
+## Window Managers
+I mainly use *Fluxbox* but have been test driving i3, more specifically *i3-gaps*.
+That's why you'll see both a Fluxbox and i3 folder.
+However, make sure to only install one of these at a time,
+as they will both try to write different .xinitrc files
+Stow should warn about this collision.
+
+# Workflow
 
 WIP done on `development` branch.
 
@@ -25,7 +34,7 @@ Per-system changes are local branches and rebased on master.
 Local branches not uploaded to github.
 
 ## Submodules
+Make sure to pull and update them
+
 ### Vim
 My vim plugins are installed in the vim directory via submodules.
-
-Make sure to pull and update them
