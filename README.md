@@ -1,8 +1,9 @@
 # theTaikun's dotfiles
 ## My personal dotfile configurations for my home Linux PCs
 
-## Stow
-Use [Stow](https://www.gnu.org/software/stow/) to install the dotfiles:
+## Installation
+There are several ways to install these dotfiles:
+1. Use [Stow](https://www.gnu.org/software/stow/).
 ```shell
 stow -t ~/ vim
 stow -t ~/ zsh
@@ -16,6 +17,11 @@ If both `./zsh/bin/` and `./vim/bin` are installed, Stow will handle the merger 
 Stow will prevent any collissions from occuring.
 
 To use Stow, first delete any existing files.
+
+2. Make your own symlinks by hand
+3. Go into each folder of this repo, and copy/paste the contents to your `$HOME` folder.
+  * I don't recommend this method, as it's tedious, and if there are updates, you can't do a simple git pull and update all the files. You would have to manually copy them again.
+  * If you really don't want to install Stow, do number 2 instead.
 
 ## Window Managers
 I mainly use *Fluxbox* but have been test driving i3, more specifically *i3-gaps*.
