@@ -1,5 +1,7 @@
 # theTaikun's dotfiles
-## My personal dotfile configurations for my home Linux PCs
+A continual work in progress.
+
+These configs are used and built for my personal Linux PCs
 
 ## Installation
 There are several ways to install these dotfiles:
@@ -21,8 +23,8 @@ Stow will warn of collisions if this is not done.
 
 2. Make your own symlinks by hand.
 3. Go into each folder of this repo, and copy/paste the contents to your `$HOME` folder.
-  * I don't recommend this method, as it's tedious, and if there are updates, you can't do a simple git pull and update all the files. You would have to manually copy them again.
-  * If you really don't want to install Stow, do number 2 instead.
+    * I don't recommend this method, as it's tedious, and if there are updates, you can't do a simple git pull and update all the files. You would have to manually copy them again.
+    * If you really don't want to install Stow, do number 2 instead.
 
 ## Window Managers
 I mainly use *Fluxbox* but have been test driving i3, more specifically *i3-gaps*.
@@ -30,9 +32,9 @@ That's why you'll see both a Fluxbox and i3 folder.
 However, make sure to only install one of these at a time,
 as they will both try to write different .xinitrc files
 
-# Workflow
+## Workflow
 
-WIP done on `development` branch.
+WIP done on the `development` branch.
 
 Working configs merged to master.
 
