@@ -41,8 +41,22 @@ Working configs merged to master.
 Per-system changes are local branches and rebased on master.
 Local branches not uploaded to github.
 
-## Submodules
+## Vim
+### Submodules
+My vim plugins are installed in the vim directory via submodules.
 Make sure to pull and update them
 
-### Vim
-My vim plugins are installed in the vim directory via submodules.
+### Running a terminal inside Vim
+May require Vim >=8.0 for terminal mode support
+
+If using Gentoo [like me], build with `terminal` local use flag
+
+### `svn diff`
+I was unsatisfied with the way subversion diff's files, so I looked for a better way and found [this StackOverflow](https://stackoverflow.com/a/29141854) answer, which has been implemented here.
+
+In `./vim/.subversion/config` you'll see the default config, except that `diff-cmd=svndiffwrap.sh`. This makes the `svn diff` command run the `svndiffwrap.sh` file.
+
+This file is located at `./vim/bin/svndiffwrap.sh`.
+It takes the two arguments passed by `svn diff` and uses `vim diff` to diff them.
+Therefore, it is important `~/bin/` is in your `PATH` for this reason, so that `svn diff` can find this wrapper.
+This is accomplished in `./shell/.profile`, so **as long as you install `./shell/`, you wont have to worry about setting the `PATH` yourself**.
