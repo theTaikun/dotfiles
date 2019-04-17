@@ -15,3 +15,6 @@
 [app] (name=xv) (class=MPlayer)
   [Alpha]	{255 140}
 [end]
+[app] (name=explorer.exe) (class=Wine)
+  [Alpha]	{255}
+[end]
