@@ -21,11 +21,10 @@ feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
 ## Start music
 mpc play &
 
-urxvt -e cava &
-urxvt -e ncmpcpp &
+terminator -l music &
 
 #daemon needed for automounting plugged in devices
-thunar --daemon & 
+thunar --daemon &
 
 # Can't not have conky
 conky &
