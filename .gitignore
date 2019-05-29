@@ -2,7 +2,6 @@
 .netrwhist
 
 fbrun_history
-menuconfig
 fluxbox/.fluxbox/log
 
 *.log

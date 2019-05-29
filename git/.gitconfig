@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[includeIf "gitdir:~/projects/github/**"]
+        path = ~/projects/github/.gitconfig
+
+[includeIf "gitdir:~/projects/local/**"]
+        path = ~/projects/local/.gitconfig

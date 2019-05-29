@@ -16,46 +16,51 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-      [exec] (xterm) {xterm} </usr/share/pixmaps/xterm-color_48x48.xpm>
+      [exec] (terminator) {terminator} </usr/share/icons/hicolor/48x48/apps/terminator.png>
       [exec] (firefox) {firefox} </usr/share/icons/hicolor/48x48/apps/firefox.png>
       [exec]   (Run) {fbrun} 
 [submenu] (Terminals)
       [exec]   (xterm) {xterm} </usr/share/pixmaps/xterm-color_48x48.xpm>
+      [exec]   (urxvt) {urxvt} </usr/share/icons/Adwaita/48x48/apps/utilities-terminal.png>
+      [exec]   (urxvtc) {urxvtc} 
+      [exec]   (mrxvt) {mrxvt} </usr/share/pixmaps/mrxvt.xpm>
 [end]
 [submenu] (Net)
 [submenu] (Browsers)
       [exec]   (firefox) {firefox} </usr/share/icons/hicolor/48x48/apps/firefox.png>
       [exec]   (links-graphic) {links -driver x fluxbox.org} </usr/share/pixmaps/links.png>
-      [exec]   (links) {xterm -e links fluxbox.org} </usr/share/pixmaps/links.png>
-      [exec]   (w3m) {xterm -e w3m fluxbox.org} 
+      [exec]   (links) {terminator -e links fluxbox.org} </usr/share/pixmaps/links.png>
+      [exec]   (w3m) {terminator -e w3m fluxbox.org} 
 [end]
 [submenu] (Mail)
       [exec]   (thunderbird) {thunderbird} </usr/share/icons/hicolor/48x48/apps/thunderbird-icon.png>
 [end]
 [submenu] (IRC)
-      [exec]   (ninja) {xterm -e ninja} 
+      [exec]   (irssi) {terminator -e irssi} 
+      [exec]   (ninja) {terminator -e ninja} 
 [end]
       [exec]   (wpa_gui) {wpa_gui} 
 [end]
 [submenu] (Editors)
-      [exec]   (nano) {xterm -e nano} 
-      [exec]   (vim) {xterm -e vim} </usr/share/icons/HighContrast/48x48/apps/vim.png>
-      [exec]   (vi) {xterm -e vi} </usr/share/icons/HighContrast/48x48/apps/vim.png>
+      [exec]   (nano) {terminator -e nano} 
+      [exec]   (vim) {terminator -e vim} </usr/share/icons/HighContrast/48x48/apps/vim.png>
+      [exec]   (vi) {terminator -e vi} </usr/share/icons/HighContrast/48x48/apps/vim.png>
 [end]
 [submenu] (Multimedia)
 [submenu] (Graphics)
+      [exec]   (gimp) {gimp} </usr/share/icons/hicolor/48x48/apps/gimp.png>
       [exec]   (inkscape) {inkscape} </usr/share/icons/hicolor/48x48/apps/inkscape.png>
 [end]
 [submenu] (Audio)
-      [exec]   (alsamixer) {xterm -e alsamixer} 
+      [exec]   (alsamixer) {terminator -e alsamixer} 
 [end]
 [submenu] (X-utils)
       [exec] (Reload .Xdefaults) {xrdb -load $HOME/.Xdefaults} 
 [end]
 [end]
 [submenu] (System Tools)
-      [exec]   (top) {xterm -e top} 
-      [exec]   (iotop) {xterm -e iotop} 
+      [exec]   (top) {terminator -e top} 
+      [exec]   (iotop) {terminator -e iotop} 
 [end]
 [submenu] (Fluxbox menu)
       [config] (Configure) 
