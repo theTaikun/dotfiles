@@ -4,6 +4,7 @@ xrdb -DENV_HOME="$HOME" -load ~/.Xresources
 mpd
 DEFAULT=startfluxbox
 CK="exec ck-launch-session dbus-launch"
+exec feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
 case $WM in
     fluxbox)
         ${CK} startfluxbox
