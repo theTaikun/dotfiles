@@ -5,6 +5,7 @@ mpd
 DEFAULT=startfluxbox
 CK="exec ck-launch-session dbus-launch"
 exec feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
+compton -b -d $DISPLAY
 case $WM in
     fluxbox)
         ${CK} startfluxbox
