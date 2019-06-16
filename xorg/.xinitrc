@@ -1,11 +1,15 @@
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 xrdb -DENV_HOME="$HOME" -load ~/.Xresources
-mpd
-DEFAULT=startfluxbox
+
 CK="exec ck-launch-session dbus-launch"
+
+mpd
 exec feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
 compton -b -d $DISPLAY
+export TERMINAL="terminator"
+
+DEFAULT=startfluxbox
 case $WM in
     fluxbox)
         ${CK} startfluxbox
