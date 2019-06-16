@@ -15,9 +15,6 @@
 # wmsmixer -w &
 # idesk &
 
-## Set wallpaper
-feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
-
 ## Start music
 mpc play &
 
