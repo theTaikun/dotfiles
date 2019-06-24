@@ -8,6 +8,8 @@ mpd
 exec feh --bg-fill ~/background &
 compton -b -d $DISPLAY
 export TERMINAL="terminator"
+export THEMECOLOR=$(convert ~/background -resize 1x1 txt:- | awk -F' ' 'NR==2{print $3}')
+~/bin/setthemecolor.py
 
 DEFAULT=startfluxbox
 case $WM in
