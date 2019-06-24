@@ -45,4 +45,5 @@
 [plugins]
 [profiles]
   [[default]]
+    background_type = transparent
     cursor_color = "#aaaaaa"
