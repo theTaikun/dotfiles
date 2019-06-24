@@ -5,7 +5,7 @@ xrdb -DENV_HOME="$HOME" -load ~/.Xresources
 CK="exec ck-launch-session dbus-launch"
 
 mpd
-exec feh --randomize --recursive --bg-max /mnt/storage/Pictures/Wallpapers/ &
+exec feh --bg-fill ~/background &
 compton -b -d $DISPLAY
 export TERMINAL="terminator"
 
