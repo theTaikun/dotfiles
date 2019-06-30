@@ -26,6 +26,11 @@ Stow will warn of collisions if this is not done.
     * I don't recommend this method, as it's tedious, and if there are updates, you can't do a simple git pull and update all the files. You would have to manually copy them again.
     * If you really don't want to install Stow, do number 2 instead.
 
+## Requirements
+Different portions of these dotfiles require different software. Some include:
+* configobj (Python module)
+* feh
+
 ## Window Managers
 I mainly use *Fluxbox* but have been test driving i3, more specifically *i3-gaps*.
 That's why you'll see both a Fluxbox and i3 folder.
