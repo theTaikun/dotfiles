@@ -30,3 +30,8 @@ tnoremap <ESC> <C-\><C-n> "When in terminal mode, remaps the <ESC> key so you ca
 if $TERM!=('putty-256color'||'screen-256')          " If not using putty or screen/tmux,
     set termguicolors               " Required for vim-hexokinase
 endif
+
+" Settings for PaperColor theme
+set t_Co=256
+set background=dark
+colorscheme PaperColor
