@@ -11,6 +11,9 @@ stow -t ~/ vim
 stow -t ~/ zsh
 stow -t ~/ fluxbox
 ```
+*DO NOT USE STOW ON THE  `SYSTEM` FOLDER"
+This folder will require root permissions and should be manually installed into the root of your filesystem.
+
 Each folder installs all (and only) the necessary files.
 
 For instance, both `./zsh/bin/` and `./vim/bin/` will write to `~/bin/`.
