@@ -34,4 +34,11 @@ endif
 " Settings for PaperColor theme
 set t_Co=256
 set background=dark
+let g:PaperColor_Theme_Options = {
+\  'theme': {
+\    'default': {
+\      'transparent_background': 1
+\    }
+\  }
+\}
 colorscheme PaperColor
