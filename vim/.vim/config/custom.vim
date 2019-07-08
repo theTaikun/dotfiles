@@ -27,11 +27,18 @@ set list          " Display unprintable characters f12 - switches (displays symb
 set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping syntax
 
 tnoremap <ESC> <C-\><C-n> "When in terminal mode, remaps the <ESC> key so you can go back to normal mode
-if $TERM!=('putty-256color'||'screen-256')          " If not using putty or screen/tmux,
-    set termguicolors               " Required for vim-hexokinase
+if ($TERM!='putty-256color') && ($TERM!='screen-256')           " If not using putty or screen/tmux,
+    set termguicolors                                           " Required for vim-hexokinase
 endif
 
 " Settings for PaperColor theme
 set t_Co=256
 set background=dark
+let g:PaperColor_Theme_Options = {
+\  'theme': {
+\    'default': {
+\      'transparent_background': 1
+\    }
+\  }
+\}
 colorscheme PaperColor
