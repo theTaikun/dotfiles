@@ -170,7 +170,7 @@ bindsym $mod+r mode "resize"
 # }
 
 # Starts polybar
-exec_always --no-startup-id polybar example &
+exec_always --no-startup-id polybar-launcher.sh
 
 #For i3-gaps:
 for_window [class=".*"] border pixel 0
