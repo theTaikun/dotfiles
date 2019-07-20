@@ -42,3 +42,4 @@ let g:PaperColor_Theme_Options = {
 \  }
 \}
 colorscheme PaperColor
+" colorscheme blaquemagick
