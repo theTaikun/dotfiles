@@ -33,7 +33,7 @@ tnoremap <ESC> <C-\><C-n> "When in terminal mode, remaps the <ESC> key so you ca
 
 " Color correction depending on terminal in use
 " =============================================
-if ($TERM!='putty-256color' && $TERM!='tmux-256color' && $TERM!='screen-256color')           " If not using putty or screen/tmux,
+if ($TERM!='putty-256color' && $TERM!='tmux-256color' && $TERM!='screen-256color' && $TERM!='linux')           " If not using putty or screen/tmux,
     set termguicolors                                           " Required for vim-hexokinase
 endif
 
