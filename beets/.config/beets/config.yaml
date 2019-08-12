@@ -1,5 +1,5 @@
-library: library.db
-directory: ~/Music
+library: ~/.config/beets/library.db
+directory: /mnt/seagate/music
 
 import:
     write: yes
@@ -9,7 +9,7 @@ import:
     hardlink: no
     delete: no
     resume: ask
-    incremental: no
+    incremental: yes
     incremental_skip_later: no
     from_scratch: no
     quiet_fallback: skip
@@ -20,7 +20,7 @@ import:
     quiet: no
     singletons: no
     default_action: apply
-    languages: []
+    languages: [en, jp]
     detail: no
     flat: no
     group_albums: no
@@ -52,7 +52,7 @@ asciify_paths: no
 art_filename: cover
 max_filename_length: 0
 
-plugins: []
+plugins: [missing, duplicates, ftintitle, fromfilename]
 pluginpath: []
 threaded: yes
 timeout: 5.0
@@ -127,8 +127,8 @@ match:
         track_length: 2.0
         track_id: 5.0
     preferred:
-        countries: []
-        media: []
+        countries: ['US', 'JP', 'GB|UK']
+        media: ['CD', 'Digital Media|File']
         original_year: no
     ignored: []
     required: []
