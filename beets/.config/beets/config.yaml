@@ -1,5 +1,5 @@
 library: ~/.config/beets/library.db
-directory: /mnt/seagate/music
+directory: /mnt/storage/music
 
 import:
     write: yes
