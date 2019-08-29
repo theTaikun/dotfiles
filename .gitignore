@@ -6,3 +6,6 @@ fluxbox/.fluxbox/log
 
 *.log
 *.swp
+
+vim/.subversion/*
+!vim/.subversion/config
