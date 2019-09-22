@@ -22,6 +22,18 @@ if !&diff " If not using vimdiff
 endif
 let g:netrw_list_hide = '.git,.svn,.jpg,.png,.bmp,.swp,.un~'
 
+" Uses relative line numbers when in normal mode,
+"   and normal line numbers when in insert
+" Makes it easier to jump around the document
+" Found at:
+" https://www.reddit.com/r/unixporn/comments/d79yj4/i3gaps_cooling_elegance/f0ypivp/
+" =======================================
+augroup numbertoggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set number relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber 
+augroup END
+
 "Settings to show tabs and trailing whitespace as visibile characters
 "https://www.reddit.com/r/vimporn/comments/9v6y3q/who_said_your_terminal_textbased_interface_cant/e9e8268?utm_source=share&utm_medium=web2x
 "=================================================================
