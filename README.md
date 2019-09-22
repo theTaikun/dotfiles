@@ -31,8 +31,8 @@ Stow will warn of collisions if this is not done.
 
 ## Requirements
 Different portions of these dotfiles require different software. Some include:
-* configobj (Python module)
-* feh
+* configobj (Python module) - to set theme color
+* feh - to set background
 
 ## Window Managers
 I mainly use *Fluxbox* but have been test driving i3, more specifically *i3-gaps*.
