@@ -27,6 +27,16 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
+[bar/custom]
+width = 80%
+height = 30
+radius = 5
+fixed-center = true;
+
+modules-left = i3
+modules-center = 
+modules-right = wlan memory date
+
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
@@ -215,14 +225,14 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = "Mem: "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlan0
+interface = wlp0s20f3
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -260,15 +270,15 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %B %d, %Y"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = %H:%M:%S
+time-alt =
 
-format-prefix = 
+format-prefix = |
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
