@@ -2,13 +2,14 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 xrdb -DENV_HOME="$HOME" -load ~/.Xresources
 
+# ck-launch-session may be needed for pulseaudio
 CK="exec ck-launch-session dbus-launch"
 
 mpd
-exec feh --bg-fill ~/background &
-compton -b -d $DISPLAY
+export THEMECOLOR=$(convert ~/background -resize 1x1 txt:- | awk -F' ' 'NR==2{print substr($3,0,7)}')
+exec feh --bg-max ~/background --image-bg $THEMECOLOR &
+compton -b -d $DISPLAY --backend glx
 export TERMINAL="terminator"
-export THEMECOLOR=$(convert ~/background -resize 1x1 txt:- | awk -F' ' 'NR==2{print $3}')
 ~/bin/setthemecolor.py
 
 DEFAULT=startfluxbox
