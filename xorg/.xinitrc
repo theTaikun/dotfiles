@@ -6,6 +6,8 @@ xrdb -DENV_HOME="$HOME" -load ~/.Xresources
 CK="exec ck-launch-session dbus-launch"
 
 mpd
+ibus-daemon -drx
+nm-applet &
 export THEMECOLOR=$(convert ~/background -resize 1x1 txt:- | awk -F' ' 'NR==2{print substr($3,0,7)}')
 exec feh --bg-max ~/background --image-bg $THEMECOLOR &
 compton -b -d $DISPLAY --backend glx
