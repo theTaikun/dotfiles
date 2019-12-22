@@ -20,3 +20,6 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# Add ruby gem directory
+PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
