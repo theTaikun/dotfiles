@@ -9,3 +9,7 @@ fi
 export XMODIFIERS=@im=ibus
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
+
+
+# Add ruby gem directory
+PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
