@@ -12,3 +12,6 @@
 
 [includeIf "gitdir:~/projects/local/**"]
         path = ~/projects/local/.gitconfig
+
+[include]
+        path = ~/.config/git/sqlite.inc;
