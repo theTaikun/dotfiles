@@ -1,5 +1,10 @@
 set cursorline
 set smartindent
+" Ensure using UTF-8, fixes isues when setting listchars below
+set encoding=utf-8
+scriptencoding utf-8  " According to :h scriptencoding,
+                      " if set encoding is set, it must appear before
+                      " scriptencoding
 
 " options for the the default netrw to make it more like the NERDtree plugin
 " From https://shapeshed.com/vim-netrw/
