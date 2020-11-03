@@ -3,8 +3,8 @@ set smartindent
 " Ensure using UTF-8, fixes isues when setting listchars below
 set encoding=utf-8
 scriptencoding utf-8  " According to :h scriptencoding,
-                      " if set encoding is set, it must appear before
-                      " scriptencoding
+                      " if `set encoding` is set, it must appear before
+                      " `scriptencoding`
 
 " options for the the default netrw to make it more like the NERDtree plugin
 " From https://shapeshed.com/vim-netrw/
@@ -26,6 +26,14 @@ if !&diff " If not using vimdiff
     augroup END
 endif
 let g:netrw_list_hide = '.git,.svn,.jpg,.png,.bmp,.swp,.un~'
+
+" Set a visible border for word wrapping
+" If wrapping not explicitly set, set border at industry standard of 80columns
+if &textwidth == 0
+    set colorcolumn=80
+else
+    let colorcolumn=&textwidth
+endif
 
 " Uses relative line numbers when in normal mode,
 "   and normal line numbers when in insert
