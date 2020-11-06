@@ -16,16 +16,23 @@ let g:netrw_altv = 1             " Change from left splitting to right splitting
 let g:netrw_winsize = 25         " Set netrw window size
 if !&diff " If not using vimdiff
 " Following autogroup xecutes when new file opened for r/w.
-" Cant place comments inline
-" Clears out all previous options from this group
-" After doing al the startup stuff (VimEnter) Opens Vexplore (the netrw tree)
 " End group
     augroup ProjectDrawer
+        " Clears out all previous options from this group
         autocmd!
+        " After doing all the startup stuff (VimEnter) Opens Vexplore (the netrw tree)
         autocmd VimEnter * :Lexplore
+        " switch window focus (away from netrw)
+        autocmd VimEnter * :wincmd p
     augroup END
 endif
 let g:netrw_list_hide = '.git,.svn,.jpg,.png,.bmp,.swp,.un~'
+
+" Close netrw if it's the last and only buffer
+aug netrw_close
+  au!
+  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
+aug END
 
 " Set a visible border for word wrapping
 " If wrapping not explicitly set, set border at industry standard of 80columns
