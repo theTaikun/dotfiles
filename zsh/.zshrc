@@ -96,6 +96,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate /usr/share/zsh/site-contrib/oh-my-zsh"
 
+# Enables better firefox scrolling
+alias firefox="MOZ_XINPUT2=1 firefox"
+
+# Required due to intel gpu hang
+# https://gitlab.freedesktop.org/mesa/mesa/-/issues/3641
+alias blender="INTEL_DEBUG=reemit blender"
+
 
 #Required for svn plugin
 prompt_svn() {
