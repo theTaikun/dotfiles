@@ -14,6 +14,7 @@ compton -b -d $DISPLAY --backend glx
 export TERMINAL="terminator"
 export MATLABROOT=$HOME/.local/MATLAB/R2019a/
 ~/bin/setthemecolor.py
+keepassxc &
 
 DEFAULT=startfluxbox
 case $WM in

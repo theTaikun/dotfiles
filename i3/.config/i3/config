@@ -224,3 +224,6 @@ bindsym XF86AudioPrev exec playerctl previous
 # Scratchpad enabled
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+
+# KeePassXC should be started with X, move it to Workspace 10
+for_window [class="KeePassXC"] move container to workspace 10
