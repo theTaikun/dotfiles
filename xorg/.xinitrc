@@ -15,6 +15,7 @@ export TERMINAL="terminator"
 export MATLABROOT=$HOME/.local/MATLAB/R2019a/
 ~/bin/setthemecolor.py
 keepassxc &
+xbindkeys
 
 DEFAULT=startfluxbox
 case $WM in
