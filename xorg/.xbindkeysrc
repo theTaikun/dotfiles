@@ -71,6 +71,25 @@
 "xbacklight -dec 20"
 	XF86MonBrightnessDown
 
+# Pulse Audio controls
+"pactl set-sink-volume @DEFAULT_SINK@ +5%"
+	XF86AudioRaiseVolume
+"pactl set-sink-volume @DEFAULT_SINK@ -5%"
+	XF86AudioLowerVolume
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	XF86AudioMute
+
+# Media player controls
+# (even though I don't have these buttons)
+"playerctl play"
+	XF86AudioPlay
+"playerctl pause"
+	XF86AudioPause
+"playerctl next"
+	XF86AudioNext
+"playerctl previous"
+	XF86AudioPrev
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
