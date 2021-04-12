@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Vim Text Editor
+Comment=Edit text files
+Exec=terminator -x vim 
+# Terminal set to false due to using wrong terminal emulator
+# See https://gitlab.gnome.org/GNOME/glib/-/issues/338
+Terminal=false
+Type=Application
+Icon=terminal
+Categories=Utility;TextEditor;
+StartupNotify=true
+MimeType=text/plain;

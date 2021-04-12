@@ -1,0 +1,14 @@
+[Default Applications]
+text/html=firefox.desktop
+text/plain=vim.desktop;
+
+[Added Associations]
+text/html=firefox.desktop;
+image/jpeg=feh.desktop;gimp.desktop;
+application/pdf=org.gnome.Evince.desktop;gimp.desktop;
+application/x-blender=blender.desktop;
+image/png=feh.desktop;gimp.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;vim.desktop;
+video/3gpp=mplayer.desktop;
+video/mp4=vlc.desktop;
+image/x-tga=gimp.desktop;
