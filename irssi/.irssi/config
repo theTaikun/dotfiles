@@ -401,6 +401,10 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Unknown"; user_name = "exxile"; nick = "exxile"; };
   "fe-text" = { actlist_sort = "refnum"; };
+  "irc/dcc" = {
+    dcc_autoget = "no";
+    dcc_autoresume = "yes";
+    dcc_send_replace_space_with_underscore = "yes";
+  };
 };
