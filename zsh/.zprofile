@@ -12,4 +12,5 @@ export QT_IM_MODULE=ibus
 
 
 # Add ruby gem directory
-PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
