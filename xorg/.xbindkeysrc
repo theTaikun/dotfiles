@@ -66,9 +66,9 @@
 #  Control + b:2 + Release
 
 # Sreen brightness controls
-"xbacklight -inc 20"
+"xbacklight -inc 1"
 	XF86MonBrightnessUp
-"xbacklight -dec 20"
+"xbacklight -dec 1"
 	XF86MonBrightnessDown
 
 # Pulse Audio controls
