@@ -9,3 +9,4 @@ fluxbox/.fluxbox/log
 
 vim/.subversion/*
 !vim/.subversion/config
+vim/.vim/config/vimwiki_paths.vim
