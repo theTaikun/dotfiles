@@ -1,0 +1,15 @@
+{
+  "configured": true,
+  "file_name": "/tmp/calibre_6.11.0_tmp_ilgdo9yp/kznqetgcGetFileName/Dict.txt",
+  "pref_lib": {
+    "books": {
+      "SchemaVersion": "0.3",
+      "configured": true,
+      "date_col": "#date_added",
+      "ext_col": "",
+      "nom_col": "#original_filename",
+      "opc_name": "name",
+      "path_col": ""
+    }
+  }
+}
