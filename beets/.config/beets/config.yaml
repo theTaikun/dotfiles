@@ -2,20 +2,20 @@ library: ~/.config/beets/library.db
 directory: /mnt/storage/music
 
 import:
-    write: yes
+    write: no
     copy: yes
     move: no
     link: no
     hardlink: no
     delete: no
-    resume: ask
+    resume: yes
     incremental: yes
     incremental_skip_later: no
     from_scratch: no
     quiet_fallback: skip
     none_rec_action: ask
     timid: no
-    log:
+    log: beetslog.txt
     autotag: yes
     quiet: no
     singletons: no
@@ -52,8 +52,8 @@ asciify_paths: no
 art_filename: cover
 max_filename_length: 0
 
-plugins: [missing, duplicates, ftintitle, fromfilename]
-pluginpath: []
+plugins: [bpd, missing, duplicates, ftintitle, fetchart, fromfilename]
+pluginpath: [~/.config/beets/myplugins]
 threaded: yes
 timeout: 5.0
 per_disc_numbering: no
@@ -88,8 +88,9 @@ sort_case_insensitive: yes
 
 paths:
     default: $albumartist/$album%aunique{}/$track $title
-    singleton: Non-Album/$artist/$title
-    comp: Compilations/$album%aunique{}/$track $title
+    singleton: singletons/$artist/$title
+    comp: compilations/$album%aunique{}/$track $title
+    albumtype:soundtrack: soundtracks/$album%aunique{}/$track $title
 
 statefile: state.pickle
 
@@ -129,7 +130,7 @@ match:
     preferred:
         countries: ['US', 'JP', 'GB|UK']
         media: ['CD', 'Digital Media|File']
-        original_year: no
+        original_year: yes
     ignored: []
     required: []
     ignored_media: []
